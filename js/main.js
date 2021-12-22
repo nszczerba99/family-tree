@@ -5,7 +5,8 @@ var peopleData = null;
 var marriagesData = null;
 
 const peopleNamesSortFun = (a, b) => {
-	return a.surname > b.surname;
+	const lastNameComp = a.surname.localeCompare(b.surname);
+	return lastNameComp !== 0 ? comp : a.name.localeCompare(b.name);
 };
 
 const addEventListenersForCheckRelationSelect = () => {
