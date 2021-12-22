@@ -105,7 +105,7 @@ const drawFamilyTree = (familyTreeData) => {
 	const options = {
 		target: '#tree',
 		debug: false,
-		width: 600,
+		width: 1000,
 		height: 400,
 		hideMarriageNodes: false,
 		marriageNodeSize: 7,
