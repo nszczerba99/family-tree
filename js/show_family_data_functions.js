@@ -81,6 +81,7 @@ const showRelationInText = (relationPath) => {
 		spouse: 'małżonek',
 		child: 'dziecko',
 		parent: 'rodzic',
+		sibling: 'rodzeństwo',
 	};
 	const searchResultElem = document.getElementById('relation-check-result');
 	let str = '<p class="mt-5">';
@@ -88,8 +89,7 @@ const showRelationInText = (relationPath) => {
 		if (index % 2 === 0) {
 			str += `<span class="h5">${item.name} ${item.surname}<br></span>`;
 		} else {
-
-			const relationName = polishTypes[item.toLowerCase()]
+			const relationName = polishTypes[item.toLowerCase()];
 			const arrowDown = '<span class="material-icons">arrow_downward</span>';
 			str += `<span class="yellow">${arrowDown} (${relationName}) ${arrowDown}<br></span>`;
 		}
